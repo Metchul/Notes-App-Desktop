@@ -5,8 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Notes_App"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="682" Width="1161">
     <Grid>
-
+        <TextBlock x:Name="pageTitle" HorizontalAlignment="Left" Margin="10,20,0,0" TextWrapping="Wrap" Text="Notes Etc." VerticalAlignment="Top" FontWeight="Bold" FontSize="36"/>
+        <TextBox x:Name="todoInputBox" HorizontalAlignment="Left" Margin="10,101,0,0" TextWrapping="Wrap" Text="New task here" VerticalAlignment="Top" Width="258" TextChanged="TextBox_TextChanged" Height="19"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,73,0,0" TextWrapping="Wrap" Text="Todo List" VerticalAlignment="Top" FontSize="16"/>
+        <Button Content="Add Task" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top" Width="70" Height="19"/>
+        <ListView d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,149,667,10">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Window>

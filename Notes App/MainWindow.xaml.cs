@@ -24,5 +24,7 @@ namespace Notes_App
         {
             InitializeComponent();
         }
+
+        
     }
 }
